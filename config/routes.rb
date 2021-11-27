@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   root 'marketing#index'
   devise_for :users, controllers: {
     sessions: 'users/sessions',
-    registrations: 'users/registrations'
+    registrations: 'users/registrations',
+    passwords: 'users/passwords',
+    confirmations: 'users/confirmations'
   }
 end
